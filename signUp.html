@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row gx-0">
+        <div class="col-12 col-lg-6">
+          <div
+            class="form-content d-flex justify-content-center align-items-center flex-column vh-100"
+          >
+            <div class="w-75">
+              <h3 class="mb-2">
+                Create new account<span class="main-color fw-bold">.</span>
+              </h3>
+              <p class="text-muted mb-4 fs-5">
+                Already A Member?
+                <span class="sign"
+                  ><a href="index.html" class="text-decoration-none"
+                    >Log In</a
+                  ></span
+                >
+              </p>
+            </div>
+            <form class="w-75">
+              <div class="form-floating">
+                <input
+                  class="signUpName mb-3 form-control"
+                  type="text"
+                  placeholder="Enter Your Name"
+                  id="userName"
+                />
+                <label class="mb-2" for="userName">Name</label>
+              </div>
+              <div class="form-floating">
+                <input
+                  class="signUpEmail mb-3 form-control"
+                  type="email"
+                  id="userEmail"
+                  placeholder="Enter Your Email"
+                />
+                <label class="mb-2" for="userEmail">Email</label>
+              </div>
+
+              <div class="form-floating">
+                <input
+                  class="signUpPassword mb-4 form-control"
+                  id="userPassword"
+                  type="password"
+                  placeholder="Enter Your Password"
+                />
+                <label class="mb-2" for="userPassword">Password</label>
+              </div>
+              <button type="button" class="signInBtn btn w-100" id="signUpSubmit">
+                Sign Up
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="d-none d-lg-block col-lg-6">
+          <div class="content">
+            <span class="login-img"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="overlay" class="d-none">
+      <div
+        id="model"
+        class="model position-absolute top-50 start-50 translate-middle bg-white p-4 rounded-3 d-none"
+      >
+        <div
+          class="header mb-4 d-flex justify-content-between align-items-center"
+        >
+          <div class="d-flex align-items-center">
+            <span class="me-2"></span>
+            <span class="me-2"></span>
+            <span class="me-2"></span>
+          </div>
+          <div onclick="closeModel()" id="closebtn">x</div>
+        </div>
+        <div class="modelContentForValidation d-none" id="modelContentForValidation">
+          <h5 class="mb-4">
+            User Name or Email or Password is not valid, Please follow the rules below :
+          </h5>
+          <p class="d-flex align-items-center">
+            <i class="fa-regular fa-circle-right p-2 ps-0"></i> User name must
+            contain at least 3 characters
+          </p>
+          <p class="d-flex align-items-center">
+            <i class="fa-regular fa-circle-right p-2 ps-0"></i> Email must be
+            a valid one
+          </p>
+          <p class="d-flex align-items-center">
+            <i class="fa-regular fa-circle-right p-2 ps-0"></i> Password must
+            contain at least 6 characters
+          </p>
+        </div>
+
+        <div class="modelCotentForSameName d-none" id="modelCotentForSameName">
+          <h4 class="d-flex align-items-center mb-0 fs-5">
+            <i class="fa-regular fa-circle-right p-2 ps-0"></i>The Email Is
+            Already Exist
+          </h4>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

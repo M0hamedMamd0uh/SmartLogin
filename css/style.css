@@ -1,0 +1,146 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-color {
+  color: #613db7;
+}
+
+/* Index Page */
+.container-fluid .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f3f4f8;
+  position: relative;
+}
+
+.container-fluid .content .login-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #613db7;
+  border: 7px solid #fff;
+}
+
+.container-fluid .signInBtn {
+  background-color: #613db7;
+  color: #fff;
+}
+.container-fluid .signInBtn:hover {
+  background-color: #7651cc;
+  color: #fff;
+}
+
+.container-fluid .sign {
+  color: #613db7;
+  cursor: pointer;
+}
+.container-fluid .sign:hover {
+  color: #8463d0;
+}
+/* Index Page */
+
+/* Home Page */
+.header .logoutBtn {
+  background: transparent;
+  border: 1px solid #613db7;
+  color: #fff;
+  padding: 5px 15px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.header .logoutBtn:hover {
+  background-color: #613db7;
+}
+.home {
+  height: calc(100vh - 73.6px);
+}
+.home h2 {
+  font-size: 4rem;
+}
+/* Home Page */
+
+/* Start Model  */
+.model {
+  box-shadow: 0 0 0 10000px #00000091;
+  width: 500px;
+  font-weight: 300;
+  font-family: "PT Sans Caption", sans-serif;
+  margin: auto;
+}
+
+@media (max-width: 767px) {
+  .model {
+    width: 380px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .model {
+    width: 450px;
+  }
+}
+
+.model .header span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: red;
+}
+
+.model .header span:nth-child(1) {
+  background-color: #f15f5d;
+}
+.model .header span:nth-child(2) {
+  background-color: #febe2e;
+}
+.model .header span:nth-child(3) {
+  background-color: #4db748;
+}
+
+.model .modelContentForValidation p {
+  margin-bottom: 5px;
+}
+
+.model .modelContentForValidation p i {
+  color: #f15f5d;
+  font-size: 18px;
+}
+
+.model .modelCotentForSameName h4 i {
+  color: #f15f5d;
+  font-size: 22px;
+}
+
+#closebtn {
+  cursor: pointer;
+  transition: 0.2s;
+
+  width: 30px;
+  height: 30px;
+  background: #613db7;
+  display: flex;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 17px !important;
+}
+#closebtn:hover {
+  color: #ccc;
+}
+
+/* model overlay  */
+#overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #00000047;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+/* End Model  */

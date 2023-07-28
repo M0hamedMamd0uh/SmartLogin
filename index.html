@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row gx-0">
+        <div class="col-lg-6 d-none d-lg-block">
+          <div class="content">
+            <span class="login-img"></span>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6">
+          <div
+            class="form-content d-flex justify-content-center align-items-center flex-column vh-100"
+          >
+            <div class="w-75">
+              <h3 class="mb-2">Welcome Back</h3>
+              <p class="text-muted mb-4 fs-6">
+                Welcome Back! Please Enter Your Details
+              </p>
+            </div>
+            <form class="w-75">
+              <div class="form-floating">
+                <input
+                  class="mb-3 form-control"
+                  type="email"
+                  id="loginEmail"
+                  placeholder="Enter Your Email"
+                />
+                <label class="mb-2" for="loginEmail">Email</label>
+              </div>
+              <div class="form-floating">
+                <input
+                  class="mb-4 form-control"
+                  id="loginPassword"
+                  type="password"
+                  placeholder="Enter Your Password"
+                />
+                <label class="mb-2" for="loginPassword">Password</label>
+              </div>
+              <button
+                type="button"
+                class="signInBtn btn w-100"
+                id="loginSubmit"
+              >
+                Sign In
+              </button>
+            </form>
+
+            <p class="createAccount mt-5">
+              Don't have an account?
+              <span class="sign">
+                <a href="signUp.html" class="text-decoration-none">Sign Up</a>
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="overlay" class="d-none">
+      <div
+        id="model"
+        class="model position-absolute top-50 start-50 translate-middle bg-white p-4 rounded-3 d-none"
+      >
+        <div
+          class="header mb-4 d-flex justify-content-between align-items-center"
+        >
+          <div class="d-flex align-items-center">
+            <span class="me-2"></span>
+            <span class="me-2"></span>
+            <span class="me-2"></span>
+          </div>
+          <div onclick="closeModel()" id="closebtn">x</div>
+        </div>
+        <div class="modelContentForValidation d-none" id="modelContentForValidation">
+          <h5 class="mb-4">
+            User Name or Password is not valid, Please follow the rules below :
+          </h5>
+          <p class="d-flex align-items-center">
+            <i class="fa-regular fa-circle-right p-2 ps-0"></i> Email must be a
+            valid one
+          </p>
+          <p class="d-flex align-items-center">
+            <i class="fa-regular fa-circle-right p-2 ps-0"></i>Password must
+            contain at least 6 characters
+          </p>
+        </div>
+
+        <div class="modelCotentForSameName d-none" id="modelCotentForSameName">
+          <h4 class="d-flex align-items-center mb-0 fs-6">
+            <i class="fa-regular fa-circle-right p-2 ps-0"></i>The Email Does
+            Not Exist or password Is Wrong
+          </h4>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
